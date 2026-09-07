@@ -1,25 +1,25 @@
 class Docrev < Formula
   desc "A terminal document viewer with inline review comments, designed for AI agent workflows"
   homepage "https://github.com/kaneko1117/docrev"
-  version "0.3.1"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kaneko1117/docrev/releases/download/v0.3.1/docrev-aarch64-apple-darwin.tar.xz"
-      sha256 "31af8d041ed2e9f997d65b9fcdc37bae2c60b8569f7d1dce7d3b5109f6ed5dbe"
+      url "https://github.com/kaneko1117/docrev/releases/download/v0.4.0/docrev-aarch64-apple-darwin.tar.xz"
+      sha256 "5b19c5ee3ecd4783cf783c9ae1e24ed066031046e5e22f4f4f8bf8bba5fb94be"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kaneko1117/docrev/releases/download/v0.3.1/docrev-x86_64-apple-darwin.tar.xz"
-      sha256 "4d4fdd29fad87b2e2d222697cdd5447fe59adee11f6c9286364fbb530c67057a"
+      url "https://github.com/kaneko1117/docrev/releases/download/v0.4.0/docrev-x86_64-apple-darwin.tar.xz"
+      sha256 "dd9148c7c87e21019aa943c46799e3f2108e849820152850a60bce988c9918b7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/kaneko1117/docrev/releases/download/v0.3.1/docrev-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "b261f21a613d65cc6f6fa190aadc717813b29d07cb9e76f65b6937627e4dcb1e"
+      url "https://github.com/kaneko1117/docrev/releases/download/v0.4.0/docrev-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5a3f6b4c2fe461d488a5a893e0c8428601a00ed4a69524955d20a2f9f7d09690"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kaneko1117/docrev/releases/download/v0.3.1/docrev-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "42f838ed8dd6d686aa21a75fa3403bb2c856e9400288e93ba1fcac91af2b25d2"
+      url "https://github.com/kaneko1117/docrev/releases/download/v0.4.0/docrev-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a45a22436699849278d70d1f3e66045b636c177b6e4ac4abf2e284fee6d1bf74"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
